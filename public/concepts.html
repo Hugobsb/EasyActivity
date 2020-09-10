@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyActivity</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pesquisa</h1>
+
+        <form action="/search" method="GET">
+            <label for="topic">Tópico</label>
+            <input type="text" name="topic" value="<%= base %>" id="topic" />
+            <input type="submit" value="Pesquisar" />
+        </form>
+
+        <h2>Texto</h2>
+
+        <form onsubmit="return false">
+            <textarea class="square concepts" name="concepts" id="concepts" cols="30" rows="10"><%= base %>,<%= concepts %></textarea>
+            <input type="submit" value="Estruturar texto" onclick="handleStructure();" />
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
