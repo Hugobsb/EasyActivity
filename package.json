@@ -4,7 +4,7 @@
   "description": "Easy way to do activities",
   "main": "./src/server.js",
   "scripts": {
-    "start": "nodemon ./src/server.js",
+    "start": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,6 +19,7 @@
     "cheerio": "^1.0.0-rc.3",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "html-docx-js-typescript": "^0.1.5",
     "ibm-watson": "^5.7.0",
     "nodemon": "^2.0.4"
   }
