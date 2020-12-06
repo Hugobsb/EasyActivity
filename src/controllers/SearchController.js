@@ -67,6 +67,7 @@ module.exports = {
                 $('html').find('.mw-jump-link').remove();
                 $('html').find('.infobox_v2').remove();
                 $('html').find('.hatnote').remove();
+                $('html').find('.print').remove();
                 $('html').find('.noprint').remove();
                 $('html').find('.printfooter').remove();
                 $('html').find('.catlinks').remove();
