@@ -3,9 +3,6 @@ const app = require('./app');
 const server = require('http').createServer(app);
 const PORT = process.env.PORT || 443;
 
-const SearchController = require('./controllers/SearchController');
-const TextController = require('./controllers/TextController');
-
 server.listen(PORT, () => {
     console.clear();
     process.stdout.write('\033c');
