@@ -4,8 +4,14 @@ const routes = Router();
 
 const SearchController = require('./controllers/SearchController');
 
-routes.get('/', (req, res) => {
-    
+routes.get('/discord', (req, res) => {
+    console.log(req.body);
+    return res.sendStatus(200);
+});
+
+routes.post('/discord', (req, res) => {
+    console.log(req.body);
+    return res.sendStatus(200);
 });
 
 module.exports = routes;
